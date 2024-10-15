@@ -2,55 +2,316 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body class="min-vh-100 bg-dark">
-    <header>
-        <nav class="navbar navbar-dark bg-danger shadow-sm">
-            <div class="container">
-                <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="img/favicons/favicon-32x32.png" alt="pokebola" class="me-2">
-                    <strong class=" fs-3">Pokédex</strong>
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container text-white pt-5">
-           <div class="row -cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
-            <div class="col">
-                Pokemon 1
-            </div>
-            <div class="col">
-                Pokemon 2
-            </div>
-            <div class="col">
-                Pokemon 3
-            </div>
-            <div class="col">
-                Pokemon 4
-            </div>
-            <div class="col">
-                Pokemon 5
-            </div>
-           </div>
-
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="img/favicons/favicon-32x32.png" alt="pokebola" class="me-2">
+          <strong class=" fs-3">Pokédex</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contatos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="pesquisar..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">pesquisar</button>
+          </form>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <footer></footer>
+  <main>
+    <div class="container text-white pt-3">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="display-4 text-white">
+            Pokédex
+          </h1>
+          <div class="my-3">
+            <button class="btn btn-sm my-2 text-white bg-secondary">
+              Ver todos
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Aço">
+              Aço
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Água">
+              Água
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Dragão">
+              Dragão
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Elétrico">
+              Eletrico
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Fada">
+              Fada
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Fantasma">
+              Fantasma
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Fogo">
+              Fogo
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Gelo">
+              Gelo
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Inseto">
+              Inseto
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Lutador">
+              Lutador
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Normal">
+              Normal
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Pedra">
+              Pedra
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Planta">
+              Planta
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Psiquico">
+              Psiquico
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Sombrio">
+              Sombrio
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Terrestre">
+              Terrestre
+            </button>
+            <button class="btn btn-sm my-2 text-white btn-Voador">
+              Voador
+            </button>
+            </button>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+      <div class="row -cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+
+        <!--Inicio do Card do Bulbasaur  -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 119, 204, 85, 0.75);">
+            <img src="img/pokemons/001.png" alt="Bulbasaur" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 001</h5>
+              <h3 class="card-title">Bulbasaur</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Planta text-white">Planta</button>
+                <button class="btn btn-Venenoso text-white">Venenoso</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card do Bulbasaur -->
+
+        <!--Inicio do Card do Ivysaur  -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 119, 204, 85, 0.75);">
+            <img src="img/pokemons/002.png" alt="Ivysaur" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 002</h5>
+              <h3 class="card-title">Ivysaur</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Planta text-white">Planta</button>
+                <button class="btn btn-Venenoso text-white">Venenoso</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- inicio do Card do Venusaur -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 119, 204, 85, 0.75);">
+            <img src="img/pokemons/003.png" alt="Venusaur" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 003</h5>
+              <h3 class="card-title">Venusaur</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Planta text-white">Planta</button>
+                <button class="btn btn-Venenoso text-white">Venenoso</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim do card Venusaur -->
+
+        <!-- Inicio do Card do Charmander -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 255, 68, 34, 0.75);">
+            <img src="img/pokemons/004.png" alt="Charmander" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 004</h5>
+              <h3 class="card-title">Charmander</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Fogo text-white">Fogo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim do Charmander -->
+        <!-- Inicio do Card do Charmeleon -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 255, 68, 34, 0.75);">
+            <img src="img/pokemons/005.png" alt="Charmeleon" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 005</h5>
+              <h3 class="card-title">Charmeleon</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Fogo text-white">Fogo</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card do Charmander -->
+        <!-- Inicio do Card do Charizard -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 255, 68, 34, 0.75);">
+            <img src="img/pokemons/006.png" alt="Charizard" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 006</h5>
+              <h3 class="card-title">Charizard</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Fogo text-white">Fogo</button>
+                <button class="btn btn-Voador text-white">Voador</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card do Charizard -->
+        <!-- Inicio do Card do Squirtle-->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 51, 153, 255, 0.75);">
+            <img src="img/pokemons/007.png" alt="Squirtle" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 007</h5>
+              <h3 class="card-title">Squirtle</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Água text-white">Água</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Squirtle -->
+        <!-- Inicio do Card Wartotle -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 51, 153, 255, 0.75);">
+            <img src="img/pokemons/008.png" alt="Wartotle" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 008</h5>
+              <h3 class="card-title">Wartotle</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Água text-white">Água</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Wartotle -->
+        <!-- Inicio do Card Blastoise  -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 51, 153, 255, 0.75);">
+            <img src="img/pokemons/009.png" alt="Blastoise" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 009</h5>
+              <h3 class="card-title">Blastoise</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Água text-white">Água</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Blastoise -->
+        <!-- Inicio do Card Caterpie -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 170, 187, 102, 0.75);">
+            <img src="img/pokemons/010.png" alt="Caterpie" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 010</h5>
+              <h3 class="card-title">Caterpie</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Inseto text-white">Inseto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Caterpie-->
+        <!-- Inicio do Card Metapod -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 170, 187, 102, 0.75);">
+            <img src="img/pokemons/011.png" alt="Metapod" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 011</h5>
+              <h3 class="card-title">Metapod</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Inseto text-white">Inseto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Metapod -->
+        <!-- Inicio do Card Butterfree -->
+        <div class="col">
+          <div class="card" style="background-color: rgba( 170, 187, 102, 0.75);">
+            <img src="img/pokemons/012.png" alt="Butterfree" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text mb-1">N° 012</h5>
+              <h3 class="card-title">Butterfree</h3>
+              <div class="d-flex gap-2 my-2">
+                <button class="btn btn-Inseto text-white">Inseto</button>
+                <button class="btn btn-Voador text-white">Voador</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do Card Butterfree -->
+
+  </main>
+  </main>
+
+
+
+  <footer class="py-3">
+    <div class="container text-white">
+      <hr>
+      <p class="float-end">
+        <a href="#"><i class="bi bi-arrow-90deg-up text-danger fs-2"></i>
+        </a>
+      </p>
+      <p class="mb-1">Versão marcela</p>
+      <p>Projeto desenvolvido nas aulas de HTML/CSS/BOOTSTRAP</p>
+    </div>
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
